@@ -1,2 +1,2 @@
 # fb-z
-INFOZ
+usage : bash bot.sh
