@@ -1,6 +1,5 @@
 #!/usr/bin/bash
-# powered by Zsecc0de.id | plase not recode for script
-# update : 08/04/2019
+# update : 16/04/2019
 # telegram : @Mr_28dh8
 clear;
 RED='\033[0;31m'
@@ -10,7 +9,7 @@ GREEN=$(tput setaf 2)
 source "botfb.sh"
 #https://graph.facebook.com/me/friends?&access_token=
 NAA() {
-                 curl -Gs "https://graph.facebook.com/v3.2/me/friends/?fields=email&access_token=$toke&limit=$total" | grep -Po '(?<="email":)[^,]*' | tr -d '[]}"'
+                 curl -Gs "https://graph.facebook.com/v3.2/me/friends/?fields=email&access_token=$toke&limit=$total" | jq -r .data | grep -Po '(?<="email":)[^,]*' | tr -d '[]}"'
 }
 bangsat() {
    	             njir=$(curl -X GET "https://graph.facebook.com/v3.0/me?fields=home.limit(100)&access_token=$TOKEN" -s)
