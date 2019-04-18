@@ -24,6 +24,6 @@ except IOError:
 			print("[!] failed generate access token")
 			print("[!] Check your username/password")
 			exit()
-		except (KeyboardInterrupt,EOFError):
+		except KeyboardInterrupt,EOFError:
 			exit("\n[!] Key interrupt: exit.")
 
