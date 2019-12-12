@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 # update : 16/04/2019
-# telegram : @Mr_28dh8
 clear;
 RED='\033[0;31m'
 CYAN='\033[0;36m'
